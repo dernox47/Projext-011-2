@@ -9,8 +9,8 @@ $(window).load(function() {
         yitteration = 0,
         menuExpanded = false;
 
-    blob = $('#blob'),
-        blobPath = $('#blob-path'),
+    blob = $('.blob'),
+        blobPath = $('.blob-path'),
 
         hamburger = $('.hamburger');
 
@@ -86,3 +86,8 @@ $(window).load(function() {
     window.requestAnimationFrame(svgCurve);
 
 });
+
+new fullpage('#fullpage', {
+    autoScrolling: true,
+    verticalCentered: false,
+})

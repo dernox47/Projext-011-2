@@ -11,10 +11,11 @@ body {
 /*---------------------------------Header-------------------------------------*/
 
 header {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100%;
     overflow: hidden;
+    top: 0;
 }
 
 .leftHeader {
@@ -86,9 +87,9 @@ h1 {
 
 /*------------------Menu------------------*/
 
-#menu {
+#sideMenu {
     height: 100%;
-    position: absolute;
+    position: fixed;
     background-color: white;
     width: 300px;
     transition: 1000ms all cubic-bezier(0.19, 1, 0.22, 1);
@@ -96,7 +97,7 @@ h1 {
     left: 60px;
 }
 
-#menu.expanded {
+#sideMenu.expanded {
     transform: translateX(0%);
     left: 0;
 }
@@ -107,7 +108,7 @@ h1 {
     position: relative;
 }
 
-#blob {
+.blob {
     top: 0;
     z-index: -1;
     right: 60px;
@@ -116,7 +117,7 @@ h1 {
     position: absolute;
 }
 
-#blob-path {
+.blob-path {
     height: 100%;
     fill: white;
 }
@@ -165,4 +166,8 @@ ul li {
     font-weight: bold;
     letter-spacing: 1px;
     padding: 20px 0;
+}
+
+body {
+    background-color: aquamarine;
 }
