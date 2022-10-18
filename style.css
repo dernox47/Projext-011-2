@@ -26,6 +26,7 @@ header {
     width: 50%;
     z-index: -1;
     border-right: 5px solid white;
+    border-bottom: 5px solid white;
     transition: 1000ms all cubic-bezier(0.19, 1, 0.22, 1);
 }
 
@@ -37,6 +38,7 @@ header {
     width: 50%;
     right: 0;
     z-index: -2;
+    border-bottom: 5px solid white;
 }
 
 .opacity {
@@ -328,7 +330,8 @@ ul li {
 /*-----------------------------------MainContent--------------------------------------*/
 
 body {
-    background-color: bisque;
+    background: rgba(130, 180, 190);
+    color: white;
 }
 
 .fp-watermark {
@@ -338,4 +341,15 @@ body {
 main p {
     font-family: 'Share Tech', sans-serif;
     font-size: 1.2em;
+    text-align: justify;
+    margin: auto;
+    width: 80%;
+    padding: 8px;
+}
+
+h2 {
+    font-family: 'Electrolize', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px;
 }
