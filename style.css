@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Share+Tech&display=swap');
 html,
 body {
     height: 100%;
@@ -84,7 +84,7 @@ h1 {
 }
 
 
-/*------------------Menu------------------*/
+/*------------------SideMenu------------------*/
 
 .sideMenu {
     height: 100%;
@@ -167,6 +167,143 @@ ul li {
     padding: 20px 0;
 }
 
+
+/*------------------SmolNavbar----------------*/
+
+.nav {
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 300ms;
+    transform: translateX(-100%);
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.nav--active .nav {
+    opacity: 1;
+    background-color: white;
+    transition: all 300ms ease-in-out;
+    transform: translateX(0);
+}
+
+.nav__list {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    bottom: 50%;
+    padding: 10px;
+}
+
+.nav__item {
+    list-style-type: none;
+    text-align: center;
+}
+
+.nav__link {
+    font-family: 'Electrolize', sans-serif;
+    text-decoration: none;
+    color: rgba(130, 180, 190, 0.8);
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+    opacity: 0;
+    transition-delay: 300ms;
+}
+
+.nav__trigger {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 25px;
+    right: 20px;
+    top: 10px;
+    z-index: 200;
+}
+
+.nav--active .nav__trigger {
+    opacity: 0.5;
+}
+
+.nav__icon {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    transition-property: background-color, transform;
+    transition-duration: 300ms;
+}
+
+.nav__icon:before,
+.nav__icon::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 5px;
+    position: absolute;
+    background-color: white;
+    transition-property: margin, transform;
+    transition-duration: 300ms;
+}
+
+.nav__icon:before {
+    margin-top: -10px;
+}
+
+.nav__icon::after {
+    margin-top: 10px;
+}
+
+.nav--active .nav__link {
+    opacity: 1;
+}
+
+.nav--active .nav__icon {
+    background-color: white;
+}
+
+.nav--active .nav__icon::before {
+    margin-top: 0;
+    transform: rotate(45deg);
+    background-color: rgba(130, 180, 190);
+}
+
+.nav--active .nav__icon::after {
+    margin-top: 0;
+    transform: rotate(-45deg);
+    background-color: rgba(130, 180, 190);
+}
+
+@media only screen and (max-width: 1400px) {
+    .sideMenu {
+        display: none;
+    }
+    h1 {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .nav,
+    .nav__trigger {
+        display: none;
+    }
+}
+
+
+/*-----------------------------------MainContent--------------------------------------*/
+
 body {
     background-color: bisque;
+}
+
+.fp-watermark {
+    display: none;
+}
+
+main p {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 1.2em;
 }

@@ -87,7 +87,14 @@ $(window).load(function() {
 
 });
 
+/*--------------FullPageScroll----------*/
 new fullpage('#fullpage', {
     autoScrolling: true,
     verticalCentered: false,
 })
+
+/*--------------SmolNavbar--------------------*/
+$('.nav__trigger').on('click', function(e) {
+    e.preventDefault();
+    $(this).parent().toggleClass('nav--active');
+});
