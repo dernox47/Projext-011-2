@@ -1,4 +1,4 @@
-$(window).on('load', function() {
+$(window).load(function() {
     var height = window.innerHeight,
         x = 0,
         y = height / 2,
