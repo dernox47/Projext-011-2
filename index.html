@@ -1,113 +1,161 @@
 <!DOCTYPE html>
 <html lang="hu">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Neumann János</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.css"
+			integrity="sha512-TzpAFfzjJAI0CY7w33tQEEIflTR3zB4kaQcCXcr+V4HmoQmXSMsQpX6z+c3lNC3XV0BeXQ6ZNb5X+sKeLP3cKA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neumann János</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.css" integrity="sha512-TzpAFfzjJAI0CY7w33tQEEIflTR3zB4kaQcCXcr+V4HmoQmXSMsQpX6z+c3lNC3XV0BeXQ6ZNb5X+sKeLP3cKA==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css">
-</head>
+	<body>
+		<a href="#" class="nav__trigger"><span class="nav__icon"></span></a>
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item">
+					<a class="nav__link active" href="index.html">Főoldal</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="elete.html">Élete</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="munkassaga.html">Munkássága</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="neumannelv.html">Neumann-elv</a>
+				</li>
+			</ul>
+		</nav>
+    
+		<div class="sideMenu">
+			<div class="hamburger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
 
-<body>
-    <a href="#" class="nav__trigger"><span class="nav__icon"></span></a>
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link active" href="index.html">Főoldal</a></li>
-            <li class="nav__item"><a class="nav__link" href="elete.html">Élete</a></li>
-            <li class="nav__item"><a class="nav__link" href="munkassaga.html">Munkássága</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Neumann-elv</a></li>
-        </ul>
-    </nav>
-    <div class="sideMenu">
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-
-        <div class="menu-inner">
-            <ul>
-                <li><a class="active" href="index.html">Főoldal</a></li>
-                <li><a href="elete.html">Élete</a></li>
-                <li><a href="munkassaga.html">Munkássága</a></li>
-                <li><a href="#">Neumann-elv</a></li>
-            </ul>
-        </div>
-
-        <svg version="1.1" class="blob" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <path class="blob-path" d="M60,500H0V0h60c0,0,20,172,20,250S60,900,60,500z"/>
-            </svg>
-    </div>
-
-    <div id="fullpage">
-        <header class="section">
-            <div class="leftHeader">
-                <h1>Neumann János</h1>
-            </div>
-            <div class="rightHeader">
-                <div class="opacity"></div>
-            </div>
-
-        </header>
-        <main class="section">
-            <div class="container">
-                <h2>Lorem ipsum</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit congue egestas. Curabitur ut risus non nisi porta imperdiet non a ante. Curabitur feugiat a sem in blandit. Pellentesque aliquet cursus tellus, sit amet gravida massa
-                    tempus et. Sed ornare id ante et tempus. Mauris porttitor suscipit nisi, non viverra elit dapibus vel. Proin commodo magna et arcu congue aliquet nec vel arcu.</p>
-                <p>Nam auctor eu velit ut volutpat. Vivamus justo massa, volutpat quis massa ut, auctor blandit diam. Pellentesque pretium velit sed massa iaculis dapibus. Maecenas nunc risus, ornare in varius et, imperdiet et magna. Etiam vitae lectus sed
-                    felis pellentesque fringilla sit amet vel augue. Vivamus lobortis eros vitae sapien mollis, a laoreet augue ultricies. Fusce eu eros sit amet augue fringilla eleifend elementum ac ipsum. Mauris et nisl maximus, pellentesque augue eu,
-                    placerat sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce et turpis nisi. Praesent eleifend nisl ipsum, at sagittis lorem posuere sed. Quisque congue, eros sit amet pharetra posuere,
-                    mi nisl porta lacus, eu scelerisque orci velit eget orci. Phasellus rutrum pharetra posuere. Vivamus facilisis, nulla a varius finibus, est diam rhoncus nulla, quis dictum dui erat non urna.</p>
-                <p>Nam auctor eu velit ut volutpat. Vivamus justo massa, volutpat quis massa ut, auctor blandit diam. Pellentesque pretium velit sed massa iaculis dapibus. Maecenas nunc risus, ornare in varius et, imperdiet et magna. Etiam vitae lectus sed
-                    felis pellentesque fringilla sit amet vel augue. Vivamus lobortis eros vitae sapien mollis, a laoreet augue ultricies. Fusce eu eros sit amet augue fringilla eleifend elementum ac ipsum. Mauris et nisl maximus, pellentesque augue eu,
-                    placerat sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce et turpis nisi. Praesent eleifend nisl ipsum, at sagittis lorem posuere sed. Quisque congue, eros sit amet pharetra posuere,
-                    mi nisl porta lacus, eu scelerisque orci velit eget orci. Phasellus rutrum pharetra posuere. Vivamus facilisis, nulla a varius finibus, est diam rhoncus nulla, quis dictum dui erat non urna.</p>
-            </div>
-        </main>
-        <div class="section last">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Linkek</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <a href="https://alvarotrigo.com/fullPage/" target="_blank">fullPage.js</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://hu.m.wikipedia.org/wiki/Neumann_J%C3%A1nos" target="_blank">Wikipédia</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://njszt.hu/hu/page/neumann-janos-eletrajza" target="_blank">njszt.hu</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="http://netpedia.hu/neumann-janos" target="_blank">Netpedia</a></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <footer>
-                <h4>Team</h4>
-                <p>Bánffy Ágnes<br>Krüger Gedeon<br>Patacsi Levente<br>Szin András</p>
-            </footer>
-        </div>
+			<div class="menu-inner">
+				<ul>
+					<li><a class="active" href="index.html">Főoldal</a></li>
+					<li><a href="elete.html">Élete</a></li>
+					<li><a href="munkassaga.html">0Munkássága</a></li>
+					<li><a href="neumannelv.html">Neumann-elv</a></li>
+				</ul>
+			</div>
+       <svg version="1.1" class="blob" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path class="blob-path" d="M60,500H0V0h60c0,0,20,172,20,250S60,900,60,500z"/></svg>
     </div>
 
 
+		<div id="fullpage">
+			<header class="section">
+				<div class="leftHeader">
+					<h1>Neumann János</h1>
+				</div>
+				<div class="rightHeader">
+					<div class="opacity"></div>
+				</div>
+			</header>
+      
+			<main class="section">
+				<div class="container">
+					<h2>Short english summary</h2>
 
+					<h3>His life</h3>
+					<p>
+						John von Neumann born in 1903.12.28. in Budapesten. He passed away
+						on the 8th of February in 1957 in Washington, USA. He moved to the
+						US after the 2nd world war started and he became an official citizen
+						there in 1937. He joined the fight against the Germans but instead
+						of fighting he was needed for his inteligence.
+					</p>
+					<h3>His work</h3>
+					<p>
+						After the war he started to work with math about sets. In 1944 he
+						was working on a program that stores the data on a faster storage
+						wheere the data constantly changed, It was the RAM. They started
+						using it after 1952. Neumann found out that computers can do more
+						comlex and longer math problems without a mistake not like any
+						human.
+					</p>
+					<h3>His principles</h3>
+					<p>
+						The computers buildup was one of his biggest principle and it was
+						about a controller, memory, logic component, and out-, input parts.
+						He thought about using programs instead of hardware for each and
+						every work.
+					</p>
+				</div>
+			</main>
+			<div class="section last">
+				<table>
+					<thead>
+						<tr>
+							<th>Linkek</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<a href="https://alvarotrigo.com/fullPage/" target="_blank"
+									>fullPage.js</a
+								>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a
+									href="https://hu.m.wikipedia.org/wiki/Neumann_J%C3%A1nos"
+									target="_blank"
+									>Wikipédia</a
+								>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a
+									href="https://njszt.hu/hu/page/neumann-janos-eletrajza"
+									target="_blank"
+									>njszt.hu</a
+								>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+        <footer>
+					<h4>Team</h4>
+					<p>
+						Bánffy Ágnes<br />Krüger Gedeon<br />Patacsi Levente<br />Szin
+						András
+					</p>
+				</footer>
+			</div>
+		</div>
 
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.js" type="text/javascript" integrity="sha512-ojnoeSkK5NDwnuW5S0ZnddobHez8Bx1yVa3RE+Cd0fGEuY/NEd4sgVF/CJ6eDtnOeLZLbTJpNFrCkUYbHS2hRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script.js" type="text/javascript"></script>
-</body>
-
+		<script
+			src="https://code.jquery.com/jquery-3.6.1.min.js"
+			integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.js"
+			type="text/javascript"
+			integrity="sha512-ojnoeSkK5NDwnuW5S0ZnddobHez8Bx1yVa3RE+Cd0fGEuY/NEd4sgVF/CJ6eDtnOeLZLbTJpNFrCkUYbHS2hRA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="script.js" type="text/javascript"></script>
+	</body>
 </html>
