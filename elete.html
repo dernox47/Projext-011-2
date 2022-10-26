@@ -13,111 +13,118 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="sidePage">
     <a href="#" class="nav__trigger"><span class="nav__icon"></span></a>
     <nav class="nav">
         <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link active" href="elete.html">Élete</a></li>
             <li class="nav__item"><a class="nav__link" href="index.html">Főoldal</a></li>
-            <li class="nav__item"><a class="nav__link" href="munkassaga.html">Munkássága</a></li>
+            <li class="nav__item"><a class="nav__link active" href="elete.html">Élete</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Munkássága</a></li>
             <li class="nav__item"><a class="nav__link" href="#">Neumann-elv</a></li>
         </ul>
     </nav>
+    <div class="sideMenu">
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <div class="menu-inner">
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a class="active" href="elete.html">Élete</a></li>
+                <li><a href="#">Munkássága</a></li>
+                <li><a href="#">Neumann-elv</a></li>
+            </ul>
+        </div>
+
+        <svg version="1.1" class="blob" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path class="blob-path" d="M60,500H0V0h60c0,0,20,172,20,250S60,900,60,500z" />
+        </svg>
+    </div>
 
     <div id="fullpage">
         <header class="section">
-            <div class="leftHeader">
+            <div class="sidePage__banner">
                 <h1>Neumann János élete</h1>
-            </div>
-            <div class="rightHeader">
-                <div class="opacity"></div>
-            </div>
-            <div class="sideMenu">
-                <div class="hamburger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-
-                <div class="menu-inner">
-                    <ul>
-                        <li><a href="index.html">Főoldal</a></li>
-                        <li><a href="munkassaga.html">Munkássága</a></li>
-                        <li><a href="#">Neumann-elv</a></li>
-                    </ul>
-                </div>
-
-                <svg version="1.1" class="blob" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <path class="blob-path" d="M60,500H0V0h60c0,0,20,172,20,250S60,900,60,500z" />
-                </svg>
             </div>
         </header>
         <main class="section">
             <div class="container">
-                <div class="sideMenu">
-                    <div class="hamburger">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
+                <h2>Élete</h2>
 
-                    <div class="menu-inner">
-                        <ul>
-                            <li><a href="index.html">Főoldal</a></li>
-                            <li><a href="munkassaga.html">Munkássága</a></li>
-                            <li><a href="#">Neumann-elv</a></li>
-                        </ul>
-                    </div>
-
-                    <svg version="1.1" class="blob" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <path class="blob-path" d="M60,500H0V0h60c0,0,20,172,20,250S60,900,60,500z" />
-                    </svg>
-                </div>
                 <p>Neumann János 1903. 12. 28-án született Budapesten, és 1957. február 8-án halt meg Washingtonban,
                     Amerikában.
                 </p>
-                <h2>Családja</h2>
+
+                <h3>Családja</h3>
 
                 <p>Apja Neumann Miksa (bankár), anyja Kann Margit, ezenkívül volt 2 öccse, Neumann Mihály (1907) aki
-                    chicagóban orvos, és Neumann Miklós (1911) aki philadelphiában jogász lett.
+                    chicagóban orvos, és Neumann Miklós (1911) aki philadelphiában jogász lett. Neumann kétszer
+                    házasodott, először Köves Mariettát vette el
+                    (1929-1937) akitől Marina von Neumann Whitman nevű lánya született, majd Dán Klárát (1938-1957)
+                    akiből az egyik elsö elektronikus számítógép programozó lett. Marina von Neumann Whitman
                 </p>
-                <p>Neumann kétszer házasodott, először Köves Mariettát vette el (1929-1937) akitől Marina von Neumann
-                    Whitman nevű lánya született, majd Dán Klárát (1938-1957) akiből az egyik elsö elektronikus
-                    számítógép programozó lett.
-                    Marina von Neumann Whitman</p>
 
-                <h2>Tanulmányai</h2>
+                <h3>Tanulmányai</h3>
+
                 <p>1909-1913 között elemi iskolában tanult, majd 1913-tól a Fasori főgimnáziumba (Magyarország ekkori
-                    legjobb középiskolájába) járt.
-                </p>
-                <p>Kitünő matematikai tehetségét Rátz László fedezte fel, majd később egyetemi évei alatt Fekete Mihály,
-                    Kürschák József és Szegő Gábor segítették matematikaikézségének a tovább fejlesztésében.
-                </p>
-                <p>1917/18-as tanévben elnyerte az V. osztály legjobb matematikusa címet, majd 1920-ban Az Ország
-                    Legjobb Matematikusdiákja kitüntetés. Mire leérettségizett, addigra már jól képzett matematikusnak
-                    számított.
-                </p>
-                <p>Párhuzamosn két egyetemet végzett, mivel mind a technika illetve a matematika érdekelte. 1921. 09.
-                    14-én beiratkozott a budapesti tudományegyetem bölcsészkarára, ahol a főtárgya a matematika volt,
-                    melléktárgyai pedig a kémia és fizika. Ezenkívül, szintén 1921-ben, kezdte el tanulmányait a berlini
-                    egyetemen, majd 1924-ben a zürichi Eidgenössische Technische Hochschulén folytatta tanulmányait.
-                    1926. 10-ben szerezte meg vegyészmérnöki diplomáját.
+                    legjobb középiskolájába) járt. Kitünő matematikai tehetségét Rátz László fedezte fel, majd később
+                    egyetemi évei alatt Fekete Mihály, Kürschák
+                    József és Szegő Gábor segítették matematikaikézségének a tovább fejlesztésében. 1917/18-as tanévben
+                    elnyerte az V. osztály legjobb matematikusa címet, majd 1920-ban Az Ország Legjobb Matematikusdiákja
+                    kitüntetés. Mire leérettségizett,
+                    addigra már jól képzett matematikusnak számított. Párhuzamosn két egyetemet végzett, mivel mind a
+                    technika illetve a matematika érdekelte. 1921. 09. 14-én beiratkozott a budapesti tudományegyetem
+                    bölcsészkarára, ahol a főtárgya a matematika
+                    volt, melléktárgyai pedig a kémia és fizika. Ezenkívül, szintén 1921-ben, kezdte el tanulmányait a
+                    berlini egyetemen, majd 1924-ben a zürichi Eidgenössische Technische Hochschulén folytatta
+                    tanulmányait. 1926. 10-ben szerezte meg vegyészmérnöki
+                    diplomáját.
                 </p>
 
-                <h2>Neumann a háború idején</h2>
+                <h3>Neumann a háború idején</h3>
                 <p>Eleinte félévente váltotta, hogy hol tanít, Európa vagy Amerika, ám amikor a fasizmus hatalomra
                     jutott Németországban, véglegesen letelepedett Amerikában. 1937-ben kapta meg amerikai
                     állampolgárságát.
                 </p>
                 <p>Amikor már a világháború elkerülhetetlennek tűnt, csatlakozott a nácizmus elleni katonai
                     előkészületekbe. Részt vett az atomenergia kutatásában és háborús célú felhasználásában, majd a
-                    békés energiatermelés szolgálatába állításának irányításában is.
+                    békés energiatermelés szolgálatába állításának irányításában
+                    is.
                 </p>
 
             </div>
         </main>
+        <div class="section last">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Linkek</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="https://alvarotrigo.com/fullPage/" target="_blank">fullPage.js</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://njszt.hu/hu/page/neumann-janos-eletrajza" target="_blank">njszt.hu</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.math.u-szeged.hu/~kovzol/SzAAMT-2001/beadott/GubaK/Ki%20volt%20Neumann%20J%E1nos%28v%E9gleges%29.htm"
+                                target="_blank">math.u</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <footer>
+                <h4>Team</h4>
+                <p>Bánffy Ágnes<br>Krüger Gedeon<br>Patacsi Levente<br>Szin András</p>
+            </footer>
+        </div>
     </div>
 
 
